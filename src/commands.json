@@ -1,0 +1,535 @@
+[
+    {
+        "long": "addmultisigaddress", 
+        "optional": [
+            "--account"
+        ], 
+        "required": [
+            "nrequired", 
+            "key_list"
+        ], 
+        "short": "amsa"
+    }, 
+    {
+        "long": "addnode", 
+        "optional": [], 
+        "required": [
+            "node", 
+            "add|remove|onetry"
+        ], 
+        "short": "an"
+    }, 
+    {
+        "long": "backupwallet", 
+        "optional": [], 
+        "required": [
+            "destination"
+        ], 
+        "short": "bw"
+    }, 
+    {
+        "long": "createmultisig", 
+        "optional": [], 
+        "required": [
+            "nrequired", 
+            "key_list"
+        ], 
+        "short": "cms"
+    }, 
+    {
+        "long": "decoderawtransaction", 
+        "optional": [], 
+        "required": [
+            "hex_string"
+        ], 
+        "short": "drt"
+    }, 
+    {
+        "long": "dumpprivkey", 
+        "optional": [], 
+        "required": [
+            "litecoinaddress"
+        ], 
+        "short": "dpk"
+    }, 
+    {
+        "long": "getaccount", 
+        "optional": [], 
+        "required": [
+            "litecoinaddress"
+        ], 
+        "short": "ga"
+    }, 
+    {
+        "long": "getaccountaddress", 
+        "optional": [], 
+        "required": [
+            "account"
+        ], 
+        "short": "gaa"
+    }, 
+    {
+        "long": "getaddednodeinfo", 
+        "optional": [
+            "--node"
+        ], 
+        "required": [
+            "dns"
+        ], 
+        "short": "gani"
+    }, 
+    {
+        "long": "getaddressesbyaccount", 
+        "optional": [], 
+        "required": [
+            "account"
+        ], 
+        "short": "gaba"
+    }, 
+    {
+        "long": "getbalance", 
+        "optional": [
+            "--account", 
+            "--minconf"
+        ], 
+        "required": [], 
+        "short": "gb"
+    }, 
+    {
+        "long": "getbestblockhash", 
+        "optional": [], 
+        "required": [], 
+        "short": "gbbh"
+    }, 
+    {
+        "long": "getblock", 
+        "optional": [
+            "-verbose"
+        ], 
+        "required": [
+            "hash"
+        ], 
+        "short": "gbl"
+    }, 
+    {
+        "long": "getblockcount", 
+        "optional": [], 
+        "required": [], 
+        "short": "gbc"
+    }, 
+    {
+        "long": "getblockhash", 
+        "optional": [], 
+        "required": [
+            "index"
+        ], 
+        "short": "gbh"
+    }, 
+    {
+        "long": "getblocktemplate", 
+        "optional": [
+            "--params"
+        ], 
+        "required": [], 
+        "short": "gbt"
+    }, 
+    {
+        "long": "getconnectioncount", 
+        "optional": [], 
+        "required": [], 
+        "short": "gcc"
+    }, 
+    {
+        "long": "getdifficulty", 
+        "optional": [], 
+        "required": [], 
+        "short": "gd"
+    }, 
+    {
+        "long": "getgenerate", 
+        "optional": [], 
+        "required": [], 
+        "short": "gg"
+    }, 
+    {
+        "long": "gethashespersec", 
+        "optional": [], 
+        "required": [], 
+        "short": "ghps"
+    }, 
+    {
+        "long": "getinfo", 
+        "optional": [], 
+        "required": [], 
+        "short": "gi"
+    }, 
+    {
+        "long": "getmininginfo", 
+        "optional": [], 
+        "required": [], 
+        "short": "gmi"
+    }, 
+    {
+        "long": "getnetworkhashps", 
+        "optional": [
+            "--blocks", 
+            "--height"
+        ], 
+        "required": [], 
+        "short": "gnhps"
+    }, 
+    {
+        "long": "getnewaddress", 
+        "optional": [
+            "--account"
+        ], 
+        "required": [], 
+        "short": "gna"
+    }, 
+    {
+        "long": "getpeerinfo", 
+        "optional": [], 
+        "required": [], 
+        "short": "gpi"
+    }, 
+    {
+        "long": "getrawmempool", 
+        "optional": [], 
+        "required": [], 
+        "short": "grmp"
+    }, 
+    {
+        "long": "getrawtransaction", 
+        "optional": [
+            "-verbose"
+        ], 
+        "required": [
+            "txid"
+        ], 
+        "short": "grt"
+    }, 
+    {
+        "long": "getreceivedbyaccount", 
+        "optional": [
+            "--minconf"
+        ], 
+        "required": [
+            "account"
+        ], 
+        "short": "grbac"
+    }, 
+    {
+        "long": "getreceivedbyaddress", 
+        "optional": [
+            "--minconf"
+        ], 
+        "required": [
+            "litecoinaddress"
+        ], 
+        "short": "grbad"
+    }, 
+    {
+        "long": "gettransaction", 
+        "optional": [], 
+        "required": [
+            "txid"
+        ], 
+        "short": "gt"
+    }, 
+    {
+        "long": "gettxout", 
+        "optional": [
+            "-includemempool"
+        ], 
+        "required": [
+            "txid", 
+            "n"
+        ], 
+        "short": "gto"
+    }, 
+    {
+        "long": "gettxoutsetinfo", 
+        "optional": [], 
+        "required": [], 
+        "short": "gtosi"
+    }, 
+    {
+        "long": "getwork", 
+        "optional": [
+            "--data"
+        ], 
+        "required": [], 
+        "short": "gw"
+    }, 
+    {
+        "long": "getworkex", 
+        "optional": [
+            "--data", 
+            "--coinbase"
+        ], 
+        "required": [], 
+        "short": "gwe"
+    }, 
+    {
+        "long": "help", 
+        "optional": [
+            "--command"
+        ], 
+        "required": [], 
+        "short": "h"
+    }, 
+    {
+        "long": "importprivkey", 
+        "optional": [
+            "--label", 
+            "--rescan"
+        ], 
+        "required": [
+            "litecoinprivkey"
+        ], 
+        "short": "ipk"
+    }, 
+    {
+        "long": "keypoolrefill", 
+        "optional": [], 
+        "required": [], 
+        "short": "kpr"
+    }, 
+    {
+        "long": "listaccounts", 
+        "optional": [
+            "--minconf"
+        ], 
+        "required": [], 
+        "short": "la"
+    }, 
+    {
+        "long": "listaddressgroupings", 
+        "optional": [], 
+        "required": [], 
+        "short": "lag"
+    }, 
+    {
+        "long": "listlockunspent", 
+        "optional": [], 
+        "required": [], 
+        "short": "llu"
+    }, 
+    {
+        "long": "listreceivedbyaccount", 
+        "optional": [
+            "--minconf", 
+            "-includeempty"
+        ], 
+        "required": [], 
+        "short": "lrba"
+    }, 
+    {
+        "long": "listsinceblock", 
+        "optional": [
+            "--blockhash", 
+            "--target-confirmations"
+        ], 
+        "required": [], 
+        "short": "lsb"
+    }, 
+    {
+        "long": "listtransactions", 
+        "optional": [
+            "--account", 
+            "--count", 
+            "--from"
+        ], 
+        "required": [], 
+        "short": "lt"
+    }, 
+    {
+        "long": "listunspent", 
+        "optional": [
+            "--minconf", 
+            "--maxconf", 
+            "--address"
+        ], 
+        "required": [], 
+        "short": "liu"
+    }, 
+    {
+        "long": "lockunspent", 
+        "optional": [
+            "-unlock?", 
+            "--array-of-Objects"
+        ], 
+        "required": [], 
+        "short": "lou"
+    }, 
+    {
+        "long": "move", 
+        "optional": [
+            "--minconf", 
+            "--comment"
+        ], 
+        "required": [
+            "fromaccount", 
+            "toaccount", 
+            "amount"
+        ], 
+        "short": "m"
+    }, 
+    {
+        "long": "sendfrom", 
+        "optional": [
+            "--minconf", 
+            "--comment", 
+            "--comment-to"
+        ], 
+        "required": [
+            "fromaccount", 
+            "tolitecoinaddress", 
+            "amount"
+        ], 
+        "short": "sf"
+    }, 
+    {
+        "long": "sendmany", 
+        "optional": [
+            "address:amount", 
+            "minconf", 
+            "--comment"
+        ], 
+        "required": [
+            "fromaccount"
+        ], 
+        "short": "sm"
+    }, 
+    {
+        "long": "sendrawtransaction", 
+        "optional": [], 
+        "required": [
+            "hex_string"
+        ], 
+        "short": "srt"
+    }, 
+    {
+        "long": "sendtoaddress", 
+        "optional": [
+            "--comment", 
+            "--comment-to"
+        ], 
+        "required": [
+            "litecoinaddress", 
+            "amount"
+        ], 
+        "short": "sta"
+    }, 
+    {
+        "long": "setaccount", 
+        "optional": [], 
+        "required": [
+            "litecoinaddress", 
+            "account"
+        ], 
+        "short": "sa"
+    }, 
+    {
+        "long": "setgenerate", 
+        "optional": [
+            "--genproclimit"
+        ], 
+        "required": [
+            "generate"
+        ], 
+        "short": "sg"
+    }, 
+    {
+        "long": "setmininput", 
+        "optional": [], 
+        "required": [
+            "amount"
+        ], 
+        "short": "smi"
+    }, 
+    {
+        "long": "settxfee", 
+        "optional": [], 
+        "required": [
+            "amount"
+        ], 
+        "short": "stf"
+    }, 
+    {
+        "long": "signmessage", 
+        "optional": [], 
+        "required": [
+            "litecoinaddress", 
+            "message"
+        ], 
+        "short": "sm"
+    }, 
+    {
+        "long": "stop", 
+        "optional": [], 
+        "required": [], 
+        "short": "st"
+    }, 
+    {
+        "long": "submitblock", 
+        "optional": [
+            "--optional-params-obj"
+        ], 
+        "required": [
+            "hex_data"
+        ], 
+        "short": "sb"
+    }, 
+    {
+        "long": "validateaddress", 
+        "optional": [], 
+        "required": [
+            "litecoinaddress"
+        ], 
+        "short": "va"
+    }, 
+    {
+        "long": "verifychain", 
+        "optional": [
+            "--check-level", 
+            "--num-blocks"
+        ], 
+        "required": [], 
+        "short": "vc"
+    }, 
+    {
+        "long": "verifymessage", 
+        "optional": [], 
+        "required": [
+            "litecoinaddress", 
+            "signature", 
+            "message"
+        ], 
+        "short": "vm"
+    }, 
+    {
+        "long": "walletlock", 
+        "optional": [], 
+        "required": [], 
+        "short": "wl"
+    }, 
+    {
+        "long": "walletpassphrase", 
+        "optional": [], 
+        "required": [
+            "passphrase", 
+            "timeout"
+        ], 
+        "short": "wpp"
+    }, 
+    {
+        "long": "walletpassphrasechange", 
+        "optional": [], 
+        "required": [
+            "oldpassphrase", 
+            "newpassphrase"
+        ], 
+        "short": "wppc"
+    }
+]
