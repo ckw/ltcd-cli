@@ -531,5 +531,12 @@
             "newpassphrase"
         ],
         "short": "wppc"
+    },
+    {
+      "long": "bleep",
+      "optional": [],
+      "required": [],
+      "short": "bp",
+      "eval": "bleep"
     }
 ]
