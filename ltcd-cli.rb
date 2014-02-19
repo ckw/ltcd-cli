@@ -18,10 +18,13 @@ def generate_command
 end
 
 def follow_if_link(path, depth=5)
-  if depth > 0
-    path = follow_if_link(File.readlink(path), depth - 1) if File.symlink?(path)
-  else
-    ($stderr.puts("Symlink depth too great"); exit 1) if File.symlink?(path)
+  if File.symlink?(path)
+    if depth > 0
+      path = follow_if_link(File.readlink(path), depth - 1)
+    else
+      $stderr.puts("Symlink depth too great")
+      exit 1
+    end
   end
 
   path
