@@ -1,10 +1,10 @@
 GEM
   remote: https://rubygems.org/
   specs:
-    cli_utils (0.0.0)
+    cli_utils (0.0.1)
 
 PLATFORMS
   ruby
 
 DEPENDENCIES
-  cli_utils (= 0.0.0)
+  cli_utils (= 0.0.1)

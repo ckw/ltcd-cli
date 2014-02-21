@@ -1,2 +1,2 @@
 source 'https://rubygems.org'
-gem 'cli_utils','0.0.0'
+gem 'cli_utils','0.0.1'
