@@ -5,11 +5,13 @@ require 'json'
 
 def generate_command
   c_path = File.join(File.dirname(follow_if_link(__FILE__)), 'src', 'commands.json')
-  cu = CliUtils.new(c_path)
+  @cu = CliUtils.new(c_path)
 
-  if cu.command
-    command = cu.commands[cu.command]
-    required = (command['required'] || []).map{|k| cu.required[k]}.join
+
+  if @cu.command
+    (eval @cu.eval; exit) if @cu.eval
+    command = @cu.commands[@cu.command]
+    required = (command['required'] || []).map{|k| @cu.required[k]}.join
     #TODO deal with optional args
     "litecoind #{command['long']} #{required}"
   else
